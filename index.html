@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="game">
+        <div class="clearfix">
+            <div id="left">
+                <canvas id="myCanvas" width="480" height="480">
+                    <p>Your browser does not support HTML5 canvas!</p>
+                    <p>Update your browser to the latest version!</p>
+                </canvas>
+
+                <div id="panel">
+                    <p id="message">Press the play button to start!</p>
+                    <button id="play">Play</button>
+                    <p>Gamemode</p>
+                    <select name="gamemode" id="gamemode">
+                        <option value="slow">Slow</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="fast">Fast</option>
+                        <option value="veryFast">Very fast</option>
+                    </select>
+                    <p>Wall</p>
+                    <p>
+                        <input type="radio" name="wall" id="wallOn" value="on" checked/><label for="wallOn">On</label>
+                        <input type="radio" name="wall" id="wallOff" value="off"/><label for="wallOff">Off</label>
+                    </p>
+                    <p id="info"></p>
+                </div>
+            </div>
+            <div id="right">
+                <div class="container">
+                    <h1>Score</h1>
+                    <p id="score" class="score"></p>
+                </div>
+                <div class="container">
+                    <h1>Highscore</h1>
+                    <table>
+                        <tr>
+                            <td>Slow</td>
+                            <td id="highscoreSlow">0</td>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td id="highscoreNormal">0</td>
+                        </tr>
+                        <tr>
+                            <td>Fast</td>
+                            <td id="highscoreFast">0</td>
+                        </tr>
+                        <tr>
+                            <td>Very fast</td>
+                            <td id="highscoreVeryFast">0</td>
+                        </tr>
+                    </table>
+                </div
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/snake.js"></script>
+</body>
+</html>

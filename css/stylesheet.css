@@ -1,0 +1,140 @@
+body {
+    background: #000;
+    font-family: arial, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#myCanvas {
+    display: block;
+
+    margin: auto;
+    background: #72AE55;
+    border: 10px solid #457d3e;
+}
+
+#scoreboard {
+    width: 500px;
+    margin: auto;
+    padding: .5em;
+    background: #457d3e;
+    font-weight: bold;
+}
+
+#panel {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: #457d3e 2px 2px 4px 0px;
+    text-align: center;
+}
+
+#play {
+    width: 100%;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#slow,
+#normal,
+#fast,
+#veryFast {
+    width: 100%;
+    margin: 5px 0;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: '';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#info {
+    display: none;
+    color: #ff0000;
+}
+
+#game {
+    width: 800px;
+    margin: auto;
+    background: #303030;
+}
+
+#left {
+    position: relative;
+    float: left;
+    width: 500px;
+}
+
+#right {
+    float: right;
+    width: 300px;
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    padding: .375em;
+    margin: 0;
+    font-size: 30px;
+    font-family: Roboto, arial, sans-serif;
+    background: #222;
+    font-weight: normal;
+    border-bottom: 1px solid #151515;
+}
+
+td:last-of-type,
+#score{
+    font-size: 30px;
+}
+
+td {
+    text-align: center;
+}
+
+.container {
+    background: #252525;
+    margin-bottom: .5em;
+    border: 1px solid #151515;
+    color: #939393;
+}
+
+.container:last-of-type {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed;
+}
+
+td {
+    padding: 10px;
+}
+
+#globalHighscores {
+    background: #252525;
+}
+
+select {
+    width: 100%;
+    padding: .75em;
+    font-size: 15px;
+    border: 2px solid #bebebe;
+    border-radius: 2px;
+}
